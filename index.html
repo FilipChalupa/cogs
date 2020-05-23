@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cogs</title>
+		<script src="cog.js" defer></script>
+		<script src="index.js" defer></script>
+		<style>
+			body {
+				--rotating-cog-color: #e0d289;
+				background-color: #ffec88;
+			}
+			rotating-cog {
+				position: fixed;
+			}
+			rotating-cog:nth-of-type(1) {
+				bottom: 60px;
+				left: 300px;
+			}
+			rotating-cog:nth-of-type(2) {
+				bottom: -100px;
+				left: -70px;
+			}
+		</style>
+	</head>
+	<body>
+		<rotating-cog
+			radius="100"
+			teeth="6"
+			duration="4"
+			offset="0.3"
+		></rotating-cog>
+		<rotating-cog
+			radius="200"
+			teeth="12"
+			duration="8"
+			offset="0.506"
+			counterclockwise
+		></rotating-cog>
+	</body>
+</html>
